@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>联系我们 - GT2.AI | AI 驱动的数字化解决方案</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="bg-orbs"><div class="bg-orb bg-orb-1"></div><div class="bg-orb bg-orb-2"></div><div class="bg-orb bg-orb-3"></div></div>
+  <div class="bg-grid"></div>
+
+  <nav class="navbar"><div class="container">
+    <a href="index.html" class="nav-logo"><div class="logo-icon">G</div><span>GT2.AI</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="services.html">服务</a></li>
+      <li><a href="about.html">关于</a></li>
+      <li><a href="contact.html" class="active">联系</a></li>
+      <li><a href="contact.html" class="btn btn-primary nav-cta">立即咨询</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="菜单"><span></span><span></span><span></span></button>
+  </div></nav>
+
+  <div class="content-wrapper">
+
+    <!-- Page Header -->
+    <section class="page-header" id="contact-top">
+      <div class="container animate-on-scroll">
+        <div class="section-label">Contact Us</div>
+        <h1 class="section-title gradient-text">联系我们</h1>
+        <p class="section-desc">有任何问题或项目需求？我们随时准备为您提供帮助</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="service-detail">
+      <div class="container">
+        <div class="contact-layout">
+          
+          <!-- Left: Contact Info -->
+          <div class="contact-info animate-on-scroll">
+            <h2>让我们开始对话</h2>
+            <p>无论您有明确的项目想法，还是只是想了解更多关于 AI 数字化的可能性，我们都期待与您交流。</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="cm-icon">📧</div>
+                <div>
+                  <div class="cm-label">邮箱</div>
+                  <div class="cm-value">hello@gt2.ai</div>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="cm-icon">💬</div>
+                <div>
+                  <div class="cm-label">微信</div>
+                  <div class="cm-value">GT2AI_Official</div>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="cm-icon">📍</div>
+                <div>
+                  <div class="cm-label">地址</div>
+                  <div class="cm-value">中国 · 深圳 南山区</div>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="cm-icon">🕐</div>
+                <div>
+                  <div class="cm-label">工作时间</div>
+                  <div class="cm-value">周一至周六 9:00 - 21:00</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick response promise -->
+            <div style="padding:24px;background:rgba(0,212,255,0.05);border:1px solid rgba(0,212,255,0.15);border-radius:16px;margin-top:16px;">
+              <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+                <span style="font-size:1.4rem;">⚡</span>
+                <strong style="font-size:0.95rem;">快速响应承诺</strong>
+              </div>
+              <p style="color:var(--text-secondary);font-size:0.9rem;line-height:1.6;">我们承诺在收到您的咨询后 <strong style="color:var(--accent-cyan);">24 小时内</strong>给出初步响应，并在 <strong style="color:var(--accent-cyan);">48 小时内</strong>安排详细沟通。</p>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form animate-on-scroll delay-2">
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+              
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+                <div class="form-group">
+                  <label for="name">姓名 *</label>
+                  <input type="text" id="name" name="name" placeholder="您的称呼" required>
+                </div>
+                <div class="form-group">
+                  <label for="company">公司名称</label>
+                  <input type="text" id="company" name="company" placeholder="公司/组织名称（选填）">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">邮箱 *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">联系电话</label>
+                <input type="tel" id="phone" name="phone" placeholder="+86 xxx xxxx xxxx">
+              </div>
+
+              <div class="form-group">
+                <label for="service">感兴趣的服务 *</label>
+                <select id="service" name="service" required>
+                  <option value="" disabled selected>请选择服务类型...</option>
+                  <option value="ai-build">AI + 智能建站</option>
+                  <option value="ai-miniapp">AI + 小程序开发</option>
+                  <option value="ai-saas">AI + SaaS 平台</option>
+                  <option value="ai-modeling">AI + 空间建模</option>
+                  <option value="other">其他 / 不确定</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="budget">预算范围</label>
+                <select id="budget" name="budget">
+                  <option value="" disabled selected>请选择预算范围...</option>
+                  <option value="under-5k">&lt; ¥5,000</option>
+                  <option value="5k-20k">¥5,000 - ¥20,000</option>
+                  <option value="20k-50k">¥20,000 - ¥50,000</option>
+                  <option value="50k-100k">¥50,000 - ¥100,000</option>
+                  <option value="over-100k">&gt; ¥100,000</option>
+                  <option value="undecided">暂不确定</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">项目描述 *</label>
+                <textarea id="message" name="message" placeholder="请简单描述您的项目需求、目标和期望..." required rows="5"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:18px;font-size:1.05rem;">
+                提交咨询
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+
+              <p style="text-align:center;color:var(--text-muted);font-size:0.82rem;margin-top:16px;">
+                提交即表示您同意我们的隐私政策，您的信息将被严格保密。
+              </p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Map placeholder area -->
+    <section class="section">
+      <div class="container">
+        <div class="animate-on-scroll" style="width:100%;height:320px;border-radius:20px;background:var(--bg-card);border:1px solid rgba(255,255,255,0.06);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--text-muted);">
+          <span style="font-size:3rem;margin-bottom:12px;">🗺️</span>
+          <span style="font-size:0.95rem;">深圳市南山区 · 科技园片区</span>
+          <span style="font-size:0.85rem;margin-top:4px;">（地图集成待上线）</span>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end content-wrapper -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo"><div class="logo-icon">G</div><span>GT2.AI</span></a>
+          <p>AI 驱动的数字化解决方案提供商，专注于用人工智能技术重塑企业的数字体验。</p>
+          <div class="footer-social"><a href="#">💬</a><a href="#">📧</a><a href="#">⌨️</a></div>
+        </div>
+        <div class="footer-col">
+          <h4>服务</h4>
+          <ul>
+            <li><a href="services.html#ai-build">AI + 智能建站</a></li>
+            <li><a href="services.html#ai-miniapp">AI + 小程序</a></li>
+            <li><a href="services.html#ai-saas">AI + SaaS</a></li>
+            <li><a href="services.html#ai-modeling">AI + 空间建模</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>公司</h4>
+          <ul>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="#">案例展示</a></li>
+            <li><a href="#">技术博客</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>联系方式</h4>
+          <ul>
+            <li><a href="mailto:hello@gt2.ai">hello@gt2.ai</a></li>
+            <li><a href="#">中国 · 深圳</a></li>
+            <li><a href="#">工作时间: 9:00 - 21:00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 GT2.AI. All rights reserved.</span>
+        <span>Built with ❤️ and AI</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Contact form handler
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = e.target;
+      const btn = form.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+      
+      // Simulate submission
+      btn.innerHTML = '✅ 提交成功！我们会尽快联系您';
+      btn.style.pointerEvents = 'none';
+      
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+        btn.style.pointerEvents = 'auto';
+        form.reset();
+      }, 3000);
+    }
+  </script>
+</body>
+</html>
